@@ -25,7 +25,7 @@ R	420817235959Z	220818141852Z	5E1ACBC65BD25C5D	unknown	/CN=XXX
 And you need an ocsp signing certificate for the responder.
 
 **IMPORTANT!**
-All certificate files must be encoded with PEM, All keys must is PKCS8 format and encoded with PEM.
+All certificate files must be encoded with PEM, All keys must are PKCS8 format and encoded with PEM.
 
 When program is running, it will create a http handle for accepting OCSP requests and sending OCSP responses.
 You can set binding IP by `-bind` arg to let it know what address should it listen. set listen port by `-port` arg.
@@ -37,7 +37,7 @@ For example the responder is running with this command:
 ./gocspd -bind <Public IP> -port 8888
 ```
 If the client in local host sends a request to `http://127.0.0.1:8888/`, the responder will reject the connection.
-Unless the client sends the request to `http://<Public IP>:8888/`. If your domain pointed the bind address,
+Unless the client sends the request to `http://<Public IP>:8888/`. If your domain pointed to the bind address,
 The connection will also be accepted.
 
 More details please use `-help` for lookup.
